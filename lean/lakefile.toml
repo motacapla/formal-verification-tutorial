@@ -1,0 +1,9 @@
+name = "tutorial"
+defaultTargets = ["Tutorial", "oracle"]
+
+[[lean_lib]]
+name = "Tutorial"
+
+[[lean_exe]]
+name = "oracle"
+root = "Main"

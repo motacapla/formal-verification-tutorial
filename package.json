@@ -1,0 +1,19 @@
+{
+  "name": "formal-verification-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test ts/*.test.ts difftest/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "lean:build": "cd lean && lake build",
+    "difftest": "tsx difftest/difftest.ts",
+    "difftest:buggy": "tsx difftest/difftest.ts --buggy"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "fast-check": "^4.10.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
